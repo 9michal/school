@@ -1,0 +1,283 @@
+* {
+  font-family: "Inconsolata", sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0; 
+}
+
+.pasek {
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+  z-index: 999;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  font-size: 22px;
+}
+
+.pasekWew {
+  display: table;
+  position: relative;
+  float: left;
+  height: 50px;
+  width: 25%;
+}
+
+.aktywny {
+  border-top: #e6dddf solid;
+  border-bottom: #e6dddf solid;
+  border-width: 3px;
+  box-sizing: border-box;
+}
+
+.pasek a {
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #e6dddf;
+}
+
+.pasek a:hover {
+  background-color: #e6dddf;
+  color: black;
+}
+
+.divObraz {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  overflow: hidden;
+}
+
+.divI {
+  max-height: 350px;
+  min-height: 220px;
+}
+
+.divM {
+  max-height: 190px;
+  min-height: 160px;
+}
+
+.obrazNapis {
+  line-height: 0.6;
+  position: absolute;
+  font-weight: 900;
+  font-size: 60px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 944;
+}
+
+.obrazNapis2, .obrazNapis3{
+  z-index: 944;
+  position: absolute;
+  font-size: 22px;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 5px;
+}
+
+.obrazNapis2 {
+  bottom: 5%;
+  right: 2%;
+}
+
+.obrazNapis3 {
+  bottom: 20%;
+  right: 2%;
+}
+
+.divObraz img {
+  left: -30%;
+  margin-top: 0px;
+  position: relative;
+  width: 160%;
+  opacity: 0.75;
+}
+
+.opis h1 {
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.opis {
+  font-size: 18px;
+  margin: 20px 10%;
+}
+
+.opisI {
+  margin: 70px auto;
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+.obrazy {
+  display: flex;
+  justify-content: center;
+}
+
+.obraz {
+  margin: 30px;
+  padding: 0;
+  border: black solid 2px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  max-width: 18%;
+  min-width: 160px;
+}
+
+.obraz p {
+  margin: 2%;
+}
+
+.imie {
+  margin: 2%;
+  font-weight: 700;
+}
+
+.obraz img {
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tabela, .tabela2 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.tabela td {
+  text-align: center;
+  border-bottom: black solid 2px;
+  padding: 8px;
+}
+
+.tabela2 td {
+  padding: 8px;
+}
+
+.tabela tr:hover {
+  background-color: #e6dddf;
+}
+
+.k1 {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.k2 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+input, textarea {
+  font-family: "Inconsolata", sans-serif;
+  font-size: 18px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 60%;
+  max-width: 400px;
+  height: 25px;
+}
+
+input[type="submit"] {
+  width: 200px;
+  height: 25px;
+  background-color: #e6dddf;
+  margin-bottom: 50px;
+}
+
+textarea {
+  width: 80%;
+  max-width: 700px;
+  height: 120px;
+  
+}
+
+@media screen and (max-width:900px) {
+  .obraz {
+    margin: 5px;
+    max-width: 25%;
+    min-width: 150px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .pasek {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 19px;
+    height: auto;
+  }
+  .pasekWew {
+    width: 100%;
+    height: 40px;
+  }
+  .obrazNapis {
+    font-size: 40px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+  .divObraz{
+    height: 200px;
+    margin: 0;
+  }
+  .divObraz img {
+    left: -30%;
+    margin-top: 0px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    opacity: 0.75;
+  }
+  .obrazy {
+    display: grid;
+    justify-items: center;
+  }
+  .obraz {
+    max-width: 70%;
+    min-width: 50%;
+    margin-bottom: 20px;
+  }
+  .obrazNapis2, .obrazNapis3 {
+    font-size: 17px;
+    right: 1%;
+  }
+  .obrazNapis2 {
+    bottom: 1%;
+  }
+  .obrazNapis3 {
+    bottom: 15%;
+  }
+}
+
+
+
+
+
+
+footer {
+  background-color: #e6dddf;
+  margin: 0;
+}
