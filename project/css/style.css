@@ -4,6 +4,7 @@
 
 body {
   text-align: center;
+  align-content: center;
   background-color: #f2f2f2;
   margin: 0;
   padding: 0; 
@@ -207,8 +208,23 @@ textarea {
   width: 80%;
   max-width: 700px;
   height: 120px;
-  
 }
+
+.mapa {
+  height: 400px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 50px;
+  border: 2px solid black;
+}
+
+.mapa iframe {
+  height: 100%;
+  width: 100%;
+}
+
 
 @media screen and (max-width:900px) {
   .obraz {
