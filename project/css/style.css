@@ -64,7 +64,7 @@ body {
 
 .divI {
   max-height: 350px;
-  min-height: 220px;
+  min-height: 200px;
 }
 
 .divM {
@@ -225,6 +225,21 @@ textarea {
   width: 100%;
 }
 
+.opisI a, a:hover, a:visited, a:link, a:active
+{
+    color: black;
+}
+
+.opisI a, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: black;
+}
+
+.opisI a:hover {
+  text-decoration: underline;
+}
+
 
 @media screen and (max-width:900px) {
   .obraz {
@@ -287,11 +302,6 @@ textarea {
     bottom: 15%;
   }
 }
-
-
-
-
-
 
 footer {
   background-color: #e6dddf;
